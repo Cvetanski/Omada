@@ -13,12 +13,15 @@
             <tr>
                 <td>
                     {{$sale->getAgent()->getName()}}
+                    {{$sale->getAgent()->getSurname()}}
                 </td>
                 <td>
                     {{$sale->getClient()->getName()}}
+                    {{$sale->getClient()->getSurname()}}
                 </td>
                 <td>
                     {{$sale->getVehicle()->getName()}}
+                    {{$sale->getVehicle()->getNumberOfCar()}}
                 </td>
             </tr>
         @endforeach

@@ -4,19 +4,19 @@
     <form method="POST" action="{{route('vehicles.store')}}" style="width: 30%">
         {{csrf_field()}}
         <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Enter Brand Name" name="Brand Name">
+            <input type="text" class="form-control" id="name" placeholder="Enter Brand Name" name="brand name">
         </div>
         <div class="form-group">
             <input type="text" class="form-control" id="name" placeholder="Enter Vehicle Number" name="vehicle number">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Enter Number of Door" name="number of door">
+            <input type="text" class="form-control" id="name" placeholder="Enter Number of Door" name="number of doors">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Enter Number of model" name="number of model">
+            <input type="text" class="form-control" id="name" placeholder="Enter Number of model" name="model number">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Enter Quantity of Stock" name="Quantity of stock">
+            <input type="text" class="form-control" id="name" placeholder="Enter Quantity of Stock" name="quantity of stock">
         </div>
         <div class="form-group">
         </div>

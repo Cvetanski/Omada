@@ -37,18 +37,23 @@ class EmployeesController extends Controller
         return redirect()->route('employees.index');
     }
 
-    public function destroy(int $id)
-    {
-        try {
-            $employee = Employee::findOrFail($id);
-            $employee->delete();
-        } catch (Exception $e) {
-            session()->flash('error', $e->getMessage());
 
-            return redirect()->back();
-        }
 
-        return redirect()->back();
-    }
+
+
+
+//    public function destroy(int $id)
+//    {
+//        try {
+//            $employee = Employee::findOrFail($id);
+//            $employee->delete();
+//        } catch (Exception $e) {
+//            session()->flash('error', $e->getMessage());
+//
+//            return redirect()->back();
+//        }
+//
+//        return redirect()->back();
+//    }
 
 }

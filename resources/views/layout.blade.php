@@ -1,12 +1,12 @@
 <html>
 <head>
-    <title>Company</title>
+    <title>Omada Tecnhology</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/layout.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.ico') }}">
 </head>
 <body>
 @section('sidebar')

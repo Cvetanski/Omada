@@ -23,6 +23,7 @@ class VehicleController extends Controller
     {
         $vehicle = new Vehicle($request->all());
 
+//        dd($request);
         $vehicle->save();
 
         return redirect()->route('vehicles.index');
@@ -37,18 +38,25 @@ class VehicleController extends Controller
         ]);
     }
 
-    public function destroy(int $id)
-    {
-        try {
-            $vehicle = Vehicle::findOrFail($id);
-            $vehicle->delete();
-        } catch (Exception $e) {
-            session()->flash('error', $e->getMessage());
 
-            return redirect()->back();
-        }
 
-        return redirect()->back();
-    }
 
+
+
+
+
+
+//    public function destroy(int $id)
+//    {
+//        try {
+//            $vehicle = Vehicle::findOrFail($id);
+//            $vehicle->delete();
+//        } catch (Exception $e) {
+//            session()->flash('error', $e->getMessage());
+//
+//            return redirect()->back();
+//        }
+//
+//        return redirect()->back();
+//    }
 }

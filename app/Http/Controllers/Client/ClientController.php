@@ -37,18 +37,26 @@ class ClientController extends Controller
         ]);
     }
 
-    public function destroy(int $id)
-    {
-        try {
-            $client = Client::findOrFail($id);
-            $client->delete();
-        } catch (Exception $e) {
-            session()->flash('error', $e->getMessage());
 
-            return redirect()->back();
-        }
 
-        return redirect()->back();
-    }
+
+
+
+
+
+
+//    public function destroy(int $id)
+//    {
+//        try {
+//            $client = Client::findOrFail($id);
+//            $client->delete();
+//        } catch (Exception $e) {
+//            session()->flash('error', $e->getMessage());
+//
+//            return redirect()->back();
+//        }
+//
+//        return redirect()->back();
+//    }
 
 }

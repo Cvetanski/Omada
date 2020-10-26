@@ -37,7 +37,7 @@ Route::prefix('vehicles')->group(function () {
     Route::get('/', 'VehicleController@index')->name('vehicles.index');
     Route::get('/create', 'VehicleController@create')->name('vehicles.create');
     Route::post('/create', 'VehicleController@store')->name('vehicles.store');
-    Route::delete('/delete', 'VehicleController@destroy');
+    Route::get('/update', 'VehicleController@update');
 });
 
 Route::prefix('sales')->group(function () {
